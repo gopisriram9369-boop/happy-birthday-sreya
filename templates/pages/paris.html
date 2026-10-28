@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% block content %}
+<section class="scene paris-scene" id="paris" aria-labelledby="parisTitle">
+  <div class="paris-sky" aria-hidden="true"></div>
+  <div class="paris-3d" id="parisWorld" aria-label="Interactive three dimensional Eiffel Tower at sunset"></div>
+  <div class="paris-content">
+    <span class="step">CHAPTER 06 · A LITTLE DREAM IN PARIS</span>
+    <h1 id="parisTitle">Paris, <em>just for you.</em></h1>
+    <p>Bangaram, I know how much you love the Eiffel Tower. I wish I could take your hand and bring you here today. So I made you a little piece of Paris. ❤️</p>
+    <div class="paris-invitation" id="parisInvitation"><span>✉ &nbsp; A LETTER FROM MY HEART &nbsp; ✉</span><p>One day, I hope we'll stand beneath these beautiful lights together. Until then, let this be our little dream.</p><strong>ONE DAY, PARIS. ALWAYS, YOU. ♡</strong></div>
+    <div class="paris-actions"><button class="btn primary" id="parisNight">Watch Paris turn to night ✨</button><button class="btn outline" id="parisReset" hidden>Return to sunset ↺</button></div>
+    <p class="paris-tip">↔ Drag to explore · Swipe on mobile · Pinch to zoom</p>
+  </div>
+  <div class="chapter-next"><button data-go="finale">Next · One last surprise <span>→</span></button></div>
+</section>
+{% endblock %}

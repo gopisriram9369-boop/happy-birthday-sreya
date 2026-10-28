@@ -1,0 +1,36 @@
+/* Project Chandana V4: pink & white enchanted rose garden */
+:root{--bg:#32101f;--navy:#4c1d32;--blue:#ffb4d0;--lav:#ffe1ec;--white:#fff8fa;--muted:#edbbcb;--gold:#ffe2ac;--glass:rgba(77,25,48,.72)}
+body{background:radial-gradient(ellipse at 80% 5%,#742746 0,transparent 45%),#32101f;color:#fff7fb}
+.topbar{background:linear-gradient(180deg,rgba(53,13,31,.92),rgba(53,13,31,0))}
+.iconbtn{background:rgba(90,28,56,.76);border-color:#ffd4e27d}
+.chapter-nav{background:#4d1d36f5}
+.hero-art{background-image:linear-gradient(90deg,#4e152a88,#7c2a4c22,#4e152a88),url('../images/garden-reference.jpg');filter:hue-rotate(80deg) saturate(.85) brightness(.72)}
+.hero-overlay{background:linear-gradient(0deg,#32101f 0%,transparent 40%,rgba(40,11,24,.35) 100%),radial-gradient(ellipse at center,transparent 15%,#3a0b28a1 100%)}
+.hero-content{position:relative;z-index:3;pointer-events:none}.hero-content button,.hero-content a{pointer-events:auto}
+.hero h1 em{color:#ffe2ef}.hero h1{text-shadow:0 7px 40px #3d0828}
+.btn.primary{background:linear-gradient(120deg,#ff83ad,#f9c0d4)!important;color:#4c1930!important;border-color:#ffe0e9!important;box-shadow:0 8px 36px #f45b9560}
+.btn.outline{border-color:#ffbfd5!important;color:#ffe6ef!important}
+.world3d{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.home-world{opacity:.78;mask-image:linear-gradient(to bottom,black 15%,black 70%,transparent 100%)}
+.paris-discovery{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#ffe2ee;background:#5e1d3eb8;border:1px solid #ffc6dd88;border-radius:40px;padding:12px 20px;text-decoration:none;font-size:12px;white-space:nowrap;z-index:6;backdrop-filter:blur(10px)}
+.paris-scene{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100svh;overflow:hidden;padding:110px 22px 55px;text-align:center;background:linear-gradient(180deg,#ed9cba 0%,#efb4c6 42%,#a95b83 68%,#37172f 100%);transition:background 5s ease}
+.paris-scene.night{background:linear-gradient(180deg,#100f35 0%,#382052 45%,#562b54 72%,#210f29 100%)}
+.paris-sky{position:absolute;inset:0;background:radial-gradient(circle at 65% 33%,#fff0bd72,transparent 30%);pointer-events:none}
+.paris-3d{position:absolute;inset:0;z-index:0;touch-action:pan-y}
+.paris-content{position:relative;z-index:2;width:min(650px,100%);margin-top:clamp(40px,12vh,130px);pointer-events:none;text-shadow:0 2px 20px #4a163d99}
+.paris-content button{pointer-events:auto}
+.paris-content h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(55px,9vw,112px);line-height:.9;margin:18px 0}.paris-content h1 em{color:#fff0f5}
+.paris-content>p{font-size:clamp(13px,2vw,17px);line-height:1.8;margin:auto;max-width:540px}
+.paris-invitation{margin:24px auto 15px;padding:20px 24px;background:#5a1b3b9c;border:1px solid #ffd9e4a1;border-radius:20px;backdrop-filter:blur(13px);max-width:520px}
+.paris-invitation span{font-size:10px;letter-spacing:.19em;color:#ffe4ee}.paris-invitation p{font-family:'Cormorant Garamond',serif;font-size:clamp(21px,3vw,28px);line-height:1.15;margin:13px 0}.paris-invitation strong{font-size:11px;letter-spacing:.12em;color:#fff1d4}
+.paris-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.paris-tip{font-size:11px!important;opacity:.8;margin-top:15px!important}
+.paris-scene .chapter-next{position:relative;z-index:3;margin-top:24px}
+.rose3d{height:300px;max-width:470px;margin:0 auto -18px;touch-action:pan-y}.rose-hint{color:#ffd1df;text-align:center;font-family:'Cormorant Garamond',serif;font-size:22px;margin:0 0 20px}
+.cake3d{height:370px;width:min(600px,100%);margin:0 auto -28px;position:relative;z-index:1;pointer-events:none}.cake3d canvas{max-width:100%}
+.cake-stage .cake-wrap{position:relative;z-index:2;transform:scale(.76);transform-origin:center top;margin-top:-25px}
+.cake-stage .cake-glow{background:#f8a4c033!important}
+.memory-card:nth-child(3n+1) .memory-card-photo{border:9px solid #ffe0e8}.memory-card:nth-child(3n+2) .memory-card-photo{border:9px ridge #f3b4cc}.memory-card:nth-child(3n+3) .memory-card-photo{border:9px double #ffb7d5}
+.memory-card:nth-child(3n+2){transform:rotate(.7deg)}.memory-card:nth-child(3n+3){transform:rotate(-.7deg)}
+.detail-frame{border-color:#ffd4e4!important}
+@media(max-width:700px){.home-world{opacity:.57}.hero-content{padding-top:120px}.hero h1{font-size:clamp(64px,15vw,95px)}.paris-discovery{bottom:10px;font-size:10px;padding:10px 13px;max-width:96%;white-space:normal}.paris-content{margin-top:100px}.paris-3d{opacity:.82}.paris-invitation{padding:15px}.paris-scene{padding:95px 15px 45px}.rose3d{height:245px}.cake3d{height:290px}.cake-stage .cake-wrap{transform:scale(.65);margin-top:-45px}.paris-content h1{font-size:clamp(50px,13vw,75px)}}
+@media(prefers-reduced-motion:reduce){.hero-art{animation:none!important}.world3d,.rose3d,.cake3d{opacity:.4}}

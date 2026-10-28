@@ -1,0 +1,41 @@
+{% extends 'base.html' %}{% block content %}
+<section class="v5-hero" aria-labelledby="heroTitle" id="home">
+  <div class="v5-aura aura-one" aria-hidden="true"></div><div class="v5-aura aura-two" aria-hidden="true"></div>
+  <div class="v5-petal-field" aria-hidden="true"><span>✿</span><span>♡</span><span>✿</span><span>✧</span><span>♡</span><span>✿</span><span>✧</span></div>
+  <div class="v5-hero-inner">
+    <div class="v5-copy">
+      <div class="v5-eyebrow"><span class="v5-eyebrow-line"></span> A LOVE LETTER IN BLOOM <span>✦ 28.10.2026</span></div>
+      <p class="v5-pretitle">TO THE GIRL WHO MAKES MY WORLD BLOOM</p>
+      <h1 id="heroTitle">In every<br><em>universe,</em><br>I'd choose <span class="v5-you">you<span class="v5-dot">.</span></span></h1>
+      <div class="v5-small-rose" aria-hidden="true">✿ ───── ♡ ───── ✿</div>
+      <h2>Happy 20th Birthday, <i>My Bangaram.</i></h2>
+      <p class="v5-message">Sreya Chandana, even when I can't be right beside you, my heart is always finding its way to yours. I made this little world so you can feel just how loved you are.</p>
+      <div class="v5-buttons"><a class="v5-button v5-button-main" href="/memories">Explore our love story <span>↗</span></a><a class="v5-button v5-button-secondary" href="/cake">A surprise for you <span>♡</span></a></div>
+      <p class="v5-footnote">FOUR MONTHS OF US &nbsp; ✦ &nbsp; A FOREVER OF LITTLE MOMENTS</p>
+    </div>
+    <div class="v5-art" id="floatingGallery" aria-label="Interactive floating photographs of Sreya Chandana">
+      <div class="v5-halo v5-halo-a" aria-hidden="true"></div><div class="v5-halo v5-halo-b" aria-hidden="true"></div>
+      <div class="v5-photo v5-photo-main" data-depth="15" style="--rot:-6deg;--delay:.15s"><a href="/memories/1" aria-label="Open memory one"><img src="{{ url_for('static', filename='images/photos/sreya-01.jpg') }}" alt="Sreya Chandana — our first memory" fetchpriority="high"><span class="v5-photo-label">my favorite person ♡</span></a></div>
+      <div class="v5-photo v5-photo-heart" data-depth="-22" style="--rot:8deg;--delay:.35s"><a href="/memories/2" aria-label="Open memory two"><img src="{{ url_for('static', filename='images/photos/sreya-02.jpg') }}" alt="Sreya Chandana — a little sunshine"></a></div>
+      <div class="v5-photo v5-photo-round" data-depth="28" style="--rot:9deg;--delay:.55s"><a href="/memories/3" aria-label="Open memory three"><img src="{{ url_for('static', filename='images/photos/sreya-03.jpg') }}" alt="Sreya Chandana — a beautiful moment"></a></div>
+      <div class="v5-photo v5-photo-mini" data-depth="-14" style="--rot:-9deg;--delay:.75s"><a href="/memories/4" aria-label="Open memory four"><img src="{{ url_for('static', filename='images/photos/sreya-04.jpg') }}" alt="Sreya Chandana — another favorite memory"></a></div>
+      <div class="v5-rose v5-rose-right" aria-hidden="true"><span>🌹</span><span>🌹</span><span>🌹</span></div><div class="v5-rose v5-rose-left" aria-hidden="true"><span>🌹</span><span>🌹</span></div>
+      <div class="v5-float-heart v5-heart-one" aria-hidden="true">♥</div><div class="v5-float-heart v5-heart-two" aria-hidden="true">♡</div><div class="v5-float-heart v5-heart-three" aria-hidden="true">✦</div>
+      <div class="v5-sticker">20<br><small>and so loved</small></div>
+      <p class="v5-photo-hint">✧ TAP A PHOTO TO OPEN A MEMORY ✧</p>
+    </div>
+  </div>
+  <a href="/paris" class="v5-paris-teaser">✧ Somewhere in Paris, a little surprise is waiting for you <span>↗</span></a>
+</section>
+<section class="v5-chapters" aria-labelledby="chapterHeading"><p class="v5-section-kicker">THE LITTLE WORLD I MADE FOR YOU</p><h2 id="chapterHeading">Eight ways to say <em>I love you.</em></h2><p>Pick a little piece of my heart, Bangaram. Every chapter is yours.</p>
+<div class="v5-chapter-grid">
+<a href="/cake"><span>01 ✿</span><strong>Make a wish</strong><small>20 candles, one beautiful girl</small><b>↗</b></a>
+<a href="/memories"><span>02 ♡</span><strong>Our memories</strong><small>Every picture, a little story</small><b>↗</b></a>
+<a href="/letter"><span>03 ✉</span><strong>My heart's letter</strong><small>Words I wish I could whisper</small><b>↗</b></a>
+<a href="/hug"><span>04 ♥</span><strong>A hug from afar</strong><small>Close your eyes and feel it</small><b>↗</b></a>
+<a href="/gifts"><span>05 ✧</span><strong>Little gifts</strong><small>Five surprises, just for you</small><b>↗</b></a>
+<a href="/paris"><span>06 ✦</span><strong>Meet me in Paris</strong><small>Our Eiffel Tower dream</small><b>↗</b></a>
+<a href="/finale"><span>07 ❀</span><strong>Forever, Bangaram</strong><small>One last birthday wish</small><b>↗</b></a>
+<a href="/memories/5"><span>08 🌹</span><strong>One more moment</strong><small>A rose just for you</small><b>↗</b></a>
+</div><div class="v5-ending">Made with every bit of love I have · October 28, 2026 ♡</div></section>
+{% endblock %}
